@@ -1,29 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-:root{
---Green: hsl(75, 94%, 57%);
---White: hsl(0, 0%, 100%);
---Grey: hsl(0, 0%, 20%);
---DarkGrey: hsl(0, 0%, 12%);
---OffBlack: hsl(0, 0%, 8%);
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
 }
 
 body {
-    background-color: var(--OffBlack);
+    background-color: var(--off-black);
     display: flex;
     height: 100vh;
     margin: 0;
 }
 
-#container{
+.profile-container {
     width: 400px;
     height: 600px;
-    background-color: var(--DarkGrey);
+    background-color: var(--dark-grey);
     margin: auto;
     border-radius: 3%;
     font-family: "Inter";
 }
 
-img{
+.profile__image {
     display: block;
     margin: auto;
     margin-top: 40px;
@@ -32,54 +33,50 @@ img{
     width: 100px;
 }
 
-#profileTitle{
+.profile__title {
     text-align: center;
     line-height: 0.75em;
 }
 
-h1{
-    color: var(--White);
+.profile__name {
+    color: var(--white);
     font-size: 1.6em;
     font-weight: 500;
 }
 
-h2{
-    color: var(--Green);
+.profile__subtitle {
+    color: var(--green);
     font-size: 0.90em;
 }
 
-h3{
+.profile__description {
     text-align: center;
     font-size: 0.85em;
-    color: var(--White);
+    color: var(--white);
     font-weight: 300;
     line-height: 3em;
 }
 
-#buttons{
+.profile__buttons {
     width: 300px;
     display: flex;
     flex-direction: column;
-    gap:20px;
-    margin:auto;
-
+    gap: 20px;
+    margin: auto;
 }
 
-.button{
-    background-color: var(--Grey);
+.button {
+    background-color: var(--grey);
     height: 40px;
     border-radius: 10px;
-    box-shadow: 10px;
     border: hidden;
-    color: var(--White);
+    color: var(--white);
     font-size: 14px;
     font-weight: bold;
 }
 
-.button:hover{
-    background-color: var(--Green);
-    color: var(--OffBlack);
+.button:hover {
+    background-color: var(--green);
+    color: var(--off-black);
     cursor: pointer;
 }
-
-
