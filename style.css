@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
 
-.profile-container {
+.container {
     width: 400px;
     height: 600px;
     background-color: var(--dark-grey);
@@ -38,26 +38,29 @@ body {
     line-height: 0.75em;
 }
 
-.profile__name {
+.name {
     color: var(--white);
     font-size: 1.6em;
     font-weight: 500;
 }
 
-.profile__subtitle {
+.subtitle {
     color: var(--green);
     font-size: 0.90em;
 }
 
-.profile__description {
-    text-align: center;
+.description {
     font-size: 0.85em;
     color: var(--white);
     font-weight: 300;
+}
+
+.profile__description {
+    text-align: center;
     line-height: 3em;
 }
 
-.profile__buttons {
+.profile__button {
     width: 300px;
     display: flex;
     flex-direction: column;
